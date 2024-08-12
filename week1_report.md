@@ -2,9 +2,7 @@
 
 <h2 align="center"> CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </h2>
 
-<h3 align="center">
-  <u> Độc lập - Tự do - Hạnh phúc </u>
-</h3>
+<h3 align="center"> Độc lập - Tự do - Hạnh phúc </h3>
 
 <p align="right">
   <i> Thứ <b> Hai </b> ngày <b> 15 </b> tháng <b> 7 </b> năm <b> 2024 </b> </i>
