@@ -1,9 +1,116 @@
-<html>
-   <head>
-   </head>
-   <body style="margin:0">
-      <img style="border:1px solid red; width:150px;" src="./hero-desktop.jpg" />
-      <br />
-      <img style="border:1px solid red; width:100%; min-height: 100%;" src="./hero-desktop.jpg" />
-   </body>
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title> Intern reports </title>
+
+  <style>
+
+      main {
+         /* height: 100vh; */
+         display: flex;
+         column-gap: 50px;
+      }
+
+      .reports {
+         flex: 1;
+
+         display: flex;
+         flex-direction: column;
+      }
+      
+      .reports [class*='week'] {
+         font-style: italic;
+         color: blue;
+         text-decoration: underline;
+         align-self: flex-end;
+
+         cursor: pointer;
+      }
+
+      .reports .title {
+         font-size: 1.5rem;
+         font-weight: 900;
+         align-self: center;
+      }
+
+      section {
+         flex: 2;
+      }
+
+      .profile {
+         flex: 1;
+
+         display: flex;
+         flex-direction: column;
+      }
+
+      .profile .a {
+         align-self: center;
+      }
+
+      .profile .title {
+         font-size: 1.5rem;
+         font-weight: 800;
+      }
+
+  </style>
+  
+</head>
+
+<body>
+
+   <main>
+
+      <aside class="reports">
+
+         <p class="title"> My reports </p>
+         <p class="week-1"> Report week 1 </p>
+         <p class="week-2"> Report week 2 </p>
+         <p class="week-3"> Report week 3 </p>
+         <p class="week-4"> Report week 4 </p>
+
+      </aside>
+
+      <section>
+
+
+
+      </section>
+
+      <aside class="profile">
+
+         <p class="title"> My profile </p>
+         <p class="a"> abc </p>
+         <p class="a"> abc </p>
+
+      </aside>
+
+   </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+   <script>
+
+      const reports = document.querySelectorAll("main .reports [class*='week']");
+      
+      reports.forEach(report => {
+
+         report.addEventListener('click', () => {
+
+            fetch(`./${report.className.replace('-', '')}_report.md`)
+                  .then(res => res.text())
+                  .then(res => {
+
+                     document.querySelector('main section').innerHTML = marked.parse(res);
+                  })
+         })
+      })
+
+   </script>
+
+</body>
+
+</html>
