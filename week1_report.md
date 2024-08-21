@@ -1,17 +1,3 @@
-<h2 align="center"> CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </h2>
-
-<h3 align="center"> Độc lập - Tự do - Hạnh phúc </h3>
-
-<p align="right">
-  <i> Thứ <b> Hai </b> ngày <b> 15 </b> tháng <b> 7 </b> năm <b> 2024 </b> </i>
-</p>
-
-<h3 align="center"> BÁO CÁO TIẾN ĐỘ THỰC TẬP TUẦN 1 </h3>
-
-<p align="center">
-  <i> (từ ngày 8 tháng 7 năm 2024 đến ngày 14 tháng 7 năm 2024) </i>
-</p>
-
 **Họ và tên**: Trần Trọng Hiếu
 
 **Cán bộ hướng dẫn thực tập (CBHD)**: Phạm Duy Trung

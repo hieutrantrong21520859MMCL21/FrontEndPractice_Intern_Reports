@@ -1,62 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title> Intern reports </title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">   
-  <style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Intern reports </title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+   <link rel="icon" type="image/png" href="./asset/images/favicon-assassins-creed-32.png">
 
-      main {
-         /* height: 100vh; */
-         display: flex;
-         column-gap: 50px;
-      }
-
-      .reports {
-         flex: 1;
-
-         display: flex;
-         flex-direction: column;
-      }
-      
-      .reports [class*='week'] {
-         font-style: italic;
-         color: blue;
-         text-decoration: underline;
-         align-self: flex-end;
-
-         cursor: pointer;
-      }
-
-      .reports .title {
-         font-size: 1.5rem;
-         font-weight: 900;
-         align-self: center;
-      }
-
-      section {
-         flex: 2;
-      }
-
-      .profile {
-         flex: 1;
-
-         display: flex;
-         flex-direction: column;
-      }
-
-      .profile .a {
-         align-self: center;
-      }
-
-      .profile .title {
-         font-size: 1.5rem;
-         font-weight: 800;
-      }
-
-  </style>
+   <link rel="stylesheet" href="style.css">
   
 </head>
 
@@ -64,52 +15,66 @@
 
    <main>
 
-      <aside class="reports">
+      <!-- <aside class="reports">
 
-         <p class="title"> My reports </p>
-         <p class="week-1"> Report week 1 </p>
-         <p class="week-2"> Report week 2 </p>
-         <p class="week-3"> Report week 3 </p>
-         <p class="week-4"> Report week 4 </p>
+         <p class="title">BÁO CÁO THỰC TẬP</p>
+         <a href="#week-1">Báo cáo tuần 1</a>
+         <a href="#week-2">Báo cáo tuần 2</a>
+         <a href="#week-3">Báo cáo tuần 3</a>
+         <a href="#week-4">Báo cáo tuần 4</a>
 
       </aside>
 
-      <section>
+      <div class="sections">
 
+         <section id="week-1"></section>
+         <section id="week-2"></section>
+         <section id="week-3"></section>
+         <section id="week-4"></section>
 
-
-      </section>
+      </div>
 
       <aside class="profile">
 
-         <p class="title"> My profile </p>
-         <p class="a"> abc </p>
-         <p class="a"> abc </p>
+         <p class="title">My profile</p>
+         <p class="a">abc</p>
+         <p class="a">abc</p>
 
-      </aside>
+      </aside> -->
+
+      <header>
+
+         <img src="./asset/images/logo.svg" alt="logo" id="logo">
+   
+         <img src="./asset/images/icon-menu.svg" alt="icon-menu" id="icon-menu">
+   
+         <dialog>
+   
+           <div>
+   
+             <img src="./asset/images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close">
+   
+             <menu>
+   
+               <li> Home </li>
+               <li> New </li>
+               <li> Popular </li>
+               <li> Trending </li>
+               <li> Categories </li>
+   
+             </menu>
+   
+           </div>
+   
+         </dialog>
+   
+       </header>
 
    </main>
 
    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-   <script>
-
-      const reports = document.querySelectorAll("main .reports [class*='week']");
-      
-      reports.forEach(report => {
-
-         report.addEventListener('click', () => {
-
-            fetch(`./${report.className.replace('-', '')}_report.md`)
-                  .then(res => res.text())
-                  .then(res => {
-
-                     document.querySelector('main section').innerHTML = marked.parse(res);
-                  })
-         })
-      })
-
-   </script>
+   <script src="script.js"></script>
 
 </body>
 
