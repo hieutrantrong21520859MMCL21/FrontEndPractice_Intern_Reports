@@ -7,6 +7,8 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
    <link rel="icon" type="image/png" href="./asset/images/favicon-assassins-creed-32.png">
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
    <link rel="stylesheet" href="style.css">
   
 </head>
@@ -44,7 +46,7 @@
 
       <header>
 
-         <img src="./asset/images/logo.svg" alt="logo" id="logo">
+         <img src="./asset/images/icon-assassins-creed-logo.svg" alt="icon-assassins-creed-logo" id="icon-logo">
    
          <img src="./asset/images/icon-menu.svg" alt="icon-menu" id="icon-menu">
    
@@ -56,11 +58,35 @@
    
              <menu>
    
-               <li> Home </li>
-               <li> New </li>
-               <li> Popular </li>
-               <li> Trending </li>
-               <li> Categories </li>
+               <li>
+
+                  <a href="/" aria-content="page">Thông tin cá nhân</a>
+
+               </li>
+
+               <li>
+
+                  <details>
+
+                     <summary>Báo cáo thực tập</summary>
+                     <a href="#/week-1">Báo cáo tuần 1</a>
+                     <a href="#/week-2">Báo cáo tuần 2</a>
+                     <a href="#/week-3">Báo cáo tuần 3</a>
+                     <a href="#/week-4">Báo cáo tuần 4</a>
+                     <a href="#/week-5">Báo cáo tuần 5</a>
+                     <a href="#/week-6">Báo cáo tuần 6</a>
+                     <a href="#/week-7">Báo cáo tuần 7</a>
+                     <a href="#/week-8">Báo cáo tuần 8</a>
+
+                  </details>
+
+               </li>
+
+               <li>
+
+                  <input type="checkbox" name="" id="themeChange">
+
+               </li>
    
              </menu>
    
@@ -68,12 +94,16 @@
    
          </dialog>
    
-       </header>
+      </header>
+
+      <article></article>
+
+      
 
    </main>
 
    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+   <script src="./asset/lib/routie.js"></script>
    <script src="script.js"></script>
 
 </body>
