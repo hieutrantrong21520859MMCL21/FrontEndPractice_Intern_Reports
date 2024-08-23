@@ -20,7 +20,8 @@ _(từ ngày 08/07/2024 đến ngày 14/07/2024)_
     </ul>
     <h3>Công nghệ nền tảng trong lập trình Web</h3>
     <ul>
-        <li>Tìm hiểu ngôn ngữ HTML <br> - Tìm hiểu ngôn ngữ CSS</li>
+        <li>Tìm hiểu ngôn ngữ HTML</li>
+        <li>Tìm hiểu ngôn ngữ CSS</li>
         <li>Tìm hiểu ngôn ngữ JavaScript</li>
     </ul>
     <h3>Các thư viện phổ biến phía Client</h3>
