@@ -30,7 +30,8 @@ _(từ ngày 08/07/2024 đến ngày 14/07/2024)_
     </ul>
     <h3>Tổng quan lập trình mobile</h3>
     <ul>
-        <li>Giới thiệu về lập trình mobile <br> - Các kiến thức cần thiết về lập trình mobile</li>
+        <li>Giới thiệu về lập trình mobile</li>
+        <li>Các kiến thức cần thiết về lập trình mobile</li>
         <li>Các hướng tiếp cận trong lập trình mobile</li>
         <li>Quy trình trong lập trình mobile</li>
     </ul>
