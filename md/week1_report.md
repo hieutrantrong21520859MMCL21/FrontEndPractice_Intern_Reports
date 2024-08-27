@@ -43,11 +43,3 @@ _(từ ngày 08/07/2024 đến ngày 14/07/2024)_
         <li>Cấu trúc của ReactNative</li>
     </ul>
 </section>
-
-<!-- | TT | Nội dung công việc | Chi tiết công việc |
-| :---: | ------------------ |  ----------------- |
-| 1 | _Kiến thức nền tảng trong lập trình Web_ | - Khái niệm Internet, lịch sử hình thành và phát triển của Internet <br> - Khái niệm WWW, lịch sử hình thành và phát triển của WWW |
-| 2 | _Công nghệ nền tảng trong lập trình Web_ | - Tìm hiểu ngôn ngữ HTML <br> - Tìm hiểu ngôn ngữ CSS <br> - Tìm hiểu ngôn ngữ JavaScript |
-| 3 | _Các thư viện phổ biến phía Client_ | - Tìm hiểu thư viện jQuery <br> - Tìm hiểu thư viện Lodash |
-| 4 | _Tổng quan lập trình mobile_ | - Giới thiệu về lập trình mobile <br> - Các kiến thức cần thiết về lập trình mobile <br> - Các hướng tiếp cận trong lập trình mobile <br> - Quy trình trong lập trình mobile |
-| 5 | _Làm quen với xây dựng ứng dụng mobile đa nền tảng sử dụng ReactNative_ | - Khái niệm về ReactNative <br> - Ưu, nhược điểm của ReactNative <br> - Cấu trúc của ReactNative | -->

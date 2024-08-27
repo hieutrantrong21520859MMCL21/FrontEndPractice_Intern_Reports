@@ -1,23 +1,6 @@
-// const reports = document.querySelectorAll("main .reports a[href*='week']");
-      
-// reports.forEach(report => {
-
-//     report.addEventListener('click', () => {
-
-//         const hashPos = report.href.indexOf('#');
-//         const fileName = report.href.slice(hashPos + 1);
-
-//         fetch(`./${fileName.replace('-', '')}_report.md`)
-//             .then(res => res.text())
-//             .then(res => {
-
-//                 document.querySelector(`main .sections section[id=${fileName}]`).innerHTML = marked.parse(res);
-//             })
-//     })
-// })
-
 const btnOpenMenu = document.getElementById('icon-menu');
 const btnCloseMenu = document.getElementById('icon-menu-close');
+const btnChangeTheme = document.getElementById('themeChange');
 const menu = document.querySelector('main > header dialog');
 
 btnOpenMenu.addEventListener('click', () => {
@@ -30,8 +13,13 @@ btnCloseMenu.addEventListener('click', () => {
     menu.close();
 })
 
+btnChangeTheme.addEventListener('click', () => {
+
+    document.body.classList.toggle('dark-theme');
+})
+
 const article = document.querySelector('article');
-routie('', () => {
+routie('/profile', () => {
 
     article.className = 'profile';
     article.innerHTML =
@@ -47,28 +35,28 @@ routie('', () => {
 
         <li>
 
-            <img src="./asset/images/icon-location-32.png" alt="icon-location">
+            <img src="./asset/images/icon-location.svg" alt="icon-location">
             <p id="address">Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh</p>
 
         </li>
 
         <li>
 
-            <img src="./asset/images/icon-email-32.png" alt="icon-email">
+            <img src="./asset/images/icon-email.svg" alt="icon-email">
             <p id="email">hieutt03112003@gmail.com</p>
 
         </li>
 
         <li>
 
-            <img src="./asset/images/icon-phone-32.png" alt="icon-phone">
+            <img src="./asset/images/icon-phone.svg" alt="icon-phone">
             <p id="phone">0825452467</p>
 
         </li>
 
         <li>
 
-            <img src="./asset/images/icon-github-32.png" alt="icon-github">
+            <img src="./asset/images/icon-github.svg" alt="icon-github">
                
             <p>GitHub cá nhân</p>
 
@@ -103,6 +91,8 @@ routie('', () => {
         </nav>
 
     </footer>`;
+
+    menu.close();
 })
 
 function parseMarkdown(fileName) {
@@ -110,12 +100,38 @@ function parseMarkdown(fileName) {
     fetch(`./md/${fileName}.md`).then(res => res.text()).then(text => {
 
         article.innerHTML = marked.parse(text);
-    })
+        
+        const works = Array.from(article.querySelectorAll('section h3')).map(ele => ele.innerHTML);
+        const details_per_work = Array.from(article.querySelectorAll('section ul')).map(ele => ele.innerHTML);
+        
+        article.querySelector('section').innerHTML = '';
+        article.querySelector('section').appendChild(document.createElement('ul'));
+        
+        let htmlText = '';
+        works.forEach((work, index) => {
+
+            htmlText += `
+            <li>
+
+                <details name="${fileName}">
+
+                    <summary>
+                        <div>${work}</div>
+                    </summary>
+                    <ul>${details_per_work[index]}</ul>
+
+                </details>
+
+            </li>`;
+        })
+
+        article.querySelector('section ul').innerHTML = htmlText;
+
+    }).finally(menu.close());
 }
 
 routie('/:fileName', fileName => {
 
     article.className = `${fileName}`;
     parseMarkdown(`${fileName.replace('-', '')}_report`);
-    menu.close();
 })

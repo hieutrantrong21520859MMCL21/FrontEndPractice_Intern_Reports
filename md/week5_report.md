@@ -1,30 +1,48 @@
-<h2 align="center"> CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </h2>
+# BÁO CÁO THỰC TẬP TUẦN 5
 
-<h3 align="center"> Độc lập - Tự do - Hạnh phúc </h3>
+_(từ ngày 05/08/2024 đến ngày 11/08/2024)_
 
-<p align="right">
-  <i> Thứ <b> Hai </b> ngày <b> 12 </b> tháng <b> 8 </b> năm <b> 2024 </b> </i>
-</p>
+## Thông tin chung
 
-<h3 align="center"> BÁO CÁO TIẾN ĐỘ THỰC TẬP TUẦN 5 </h3>
+- **Cán bộ hướng dẫn thực tập (CBHD)**: Phạm Duy Trung
 
-<p align="center">
-  <i> (từ ngày 5 tháng 8 năm 2024 đến ngày 11 tháng 8 năm 2024) </i>
-</p>
+- **Thời điểm báo cáo**: ngày ***12*** tháng ***08*** năm ***2024***
 
-**Họ và tên**: Trần Trọng Hiếu
+- **Địa điểm báo cáo**: Số 75 Đường 2 tháng 4, Phường Vĩnh Hòa, TP Nha Trang, Tỉnh Khánh Hòa
 
-**Cán bộ hướng dẫn thực tập (CBHD)**: Phạm Duy Trung
+## Nội dung công việc
 
-**Địa điểm báo cáo**: 177bis, Đường Lý Chính Thắng, Quận 3, Thành phố Hồ Chí Minh
-
-**Nội dung báo cáo**:
-
-| TT | Nội dung công việc | Chi tiết công việc | Tình trạng công việc | Đánh giá |
-| :---: | ------------------ |  ----------------- | -------------------- | -------- |
-| 1 | Làm bài tập [_Intro component with sign up form_](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) trên _Frontend Mentor_ | - Hoàn thành các yêu cầu của đề bài <br> - Nộp code lên GitHub cá nhân | Đã hoàn thành ([_source code_]()) |  |
-| 2 | Làm bài tập [_Ping single column coming soon page_](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da) trên _Frontend Mentor_ | - Hoàn thành các yêu cầu của đề bài <br> - Nộp code lên GitHub cá nhân | Đã hoàn thành ([_source code_]()) |  |
-| 3 | Làm bài tập [_Contact form_](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj) trên _Frontend Mentor_ | - Hoàn thành các yêu cầu của đề bài <br> - Nộp code lên GitHub cá nhân | Đã hoàn thành ([_source code_]()) |  |
-| 4 | Làm bài tập [_Mortgage repayment calculator_](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73) trên _Frontend Mentor_ | - Hoàn thành các yêu cầu của đề bài <br> - Nộp code lên GitHub cá nhân | Đã hoàn thành ([_source code_]()) |  |
-| 5 | Làm bài tập [_Product list with cart_](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d) trên _Frontend Mentor_ | - Hoàn thành các yêu cầu của đề bài <br> - Nộp code lên GitHub cá nhân | Chưa hoàn thành |  |
-| 6 | Đọc nội dung [_Web form building blocks_](https://developer.mozilla.org/en-US/docs/Learn/Forms) trên _MDN_ | - Đọc và hiểu cách thiết kế một ***form*** trong Web <br> - Hiểu chức năng của từng loại (***type***) trong thành phần ***input*** <br> - Thiết kế các ***input*** gần gũi và thân thiện với người dùng <br> - Áp dụng kiến thức học được vào các bài tập trên | Đã hoàn thành |  |
+<section>
+  <h3>Làm bài tập <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">Intro component with sign up form</a> trên <em>Frontend Mentor</em></h3>
+  <ul>
+    <li>Hoàn thành các yêu cầu của đề bài</li>
+    <li>Nộp code lên GitHub cá nhân (<a href="">source code</a>)</li>
+  </ul>
+  <h3>Làm bài tập <a href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da">Ping single column coming soon page</a> trên <em>Frontend Mentor</em></h3>
+  <ul>
+    <li>Hoàn thành các yêu cầu của đề bài</li>
+    <li>Nộp code lên GitHub cá nhân (<a href="">source code</a>)</li>
+  </ul>
+  <h3>Làm bài tập <a href="https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj">Contact form</a> trên <em>Frontend Mentor</em></h3>
+  <ul>
+    <li>Hoàn thành các yêu cầu của đề bài</li>
+    <li>Nộp code lên GitHub cá nhân (<a href="">source code</a>)</li>
+  </ul>
+  <h3>Làm bài tập <a href="https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73">Mortgage repayment calculator</a> trên <em>Frontend Mentor</em></h3>
+  <ul>
+    <li>Hoàn thành các yêu cầu của đề bài</li>
+    <li>Nộp code lên GitHub cá nhân (<a href="">source code</a>)</li>
+  </ul>
+  <h3>Làm bài tập <a href="https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d">Product list with cart</a> trên <em>Frontend Mentor</em></h3>
+  <ul>
+    <li>Hoàn thành các yêu cầu của đề bài</li>
+    <li>Nộp code lên GitHub cá nhân (<a href="">source code</a>)</li>
+  </ul>
+  <h3>Đọc nội dung <a href="https://developer.mozilla.org/en-US/docs/LearForms">Web form building blocks</a> trên <em>MDN</em></h3>
+  <ul>
+    <li>Đọc và hiểu cách thiết kế một <em><strong>form</strong></em> trong Web</li>
+    <li>Hiểu chức năng của từng loại (<em><strong>type</strong></em>) trong thành phần <em><strong>input</strong></em></li>
+    <li>Thiết kế các <em><strong>input</strong></em> gần gũi và thân thiện với người dùng</li>
+    <li>Áp dụng kiến thức học được vào các bài tập trên</li>
+  </ul>
+</section>
