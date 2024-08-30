@@ -1,16 +1,26 @@
-const btnOpenMenu = document.getElementById('icon-menu');
-const btnCloseMenu = document.getElementById('icon-menu-close');
+const btnOpenNav = document.getElementById('icon-menu');
+const btnCloseNav = document.getElementById('icon-menu-close');
 const btnChangeTheme = document.getElementById('themeChange');
-const menu = document.querySelector('main > header dialog');
+const nav_container = document.querySelector('header .navbar-only-small-medium-screen .navbar-wrapper');
 
-btnOpenMenu.addEventListener('click', () => {
+btnOpenNav.addEventListener('click', () => {
 
-    menu.showModal();
+    nav_container.classList.add('active');
 })
 
-btnCloseMenu.addEventListener('click', () => {
+btnCloseNav.addEventListener('click', () => {
 
-    menu.close();
+    nav_container.classList.remove('active');
+})
+
+document.addEventListener('click', event => {
+
+    const navbar = nav_container.querySelector('.navbar');
+
+    if (event.clientX <= screen.width - navbar.offsetWidth) {
+
+        nav_container.classList.remove('active');
+    }
 })
 
 btnChangeTheme.addEventListener('click', () => {
@@ -19,119 +29,52 @@ btnChangeTheme.addEventListener('click', () => {
 })
 
 const article = document.querySelector('article');
-routie('/profile', () => {
-
-    article.className = 'profile';
-    article.innerHTML =
-    `
-    <div class="avatar">
-
-        <img src="./asset/images/avatar.png" alt="avatar">
-        <p>Trần Trọng Hiếu</p>
-
-    </div>
-
-    <ul>
-
-        <li>
-
-            <img src="./asset/images/icon-location.svg" alt="icon-location">
-            <p id="address">Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh</p>
-
-        </li>
-
-        <li>
-
-            <img src="./asset/images/icon-email.svg" alt="icon-email">
-            <p id="email">hieutt03112003@gmail.com</p>
-
-        </li>
-
-        <li>
-
-            <img src="./asset/images/icon-phone.svg" alt="icon-phone">
-            <p id="phone">0825452467</p>
-
-        </li>
-
-        <li>
-
-            <img src="./asset/images/icon-github.svg" alt="icon-github">
-               
-            <p>GitHub cá nhân</p>
-
-        </li>
-
-    </ul>
-
-    <footer>
-
-        <p>Liên hệ</p>
-
-        <nav>
-
-            <div>
-       
-                <i class="fa-brands fa-facebook-f"></i>
-         
-            </div>
-         
-            <div>
-         
-                <i class="fa-brands fa-twitter"></i>
-         
-            </div>
-         
-            <div>
-         
-                <i class="fa-brands fa-instagram"></i>
-         
-            </div>
-       
-        </nav>
-
-    </footer>`;
-
-    menu.close();
-})
 
 function parseMarkdown(fileName) {
 
     fetch(`./md/${fileName}.md`).then(res => res.text()).then(text => {
 
         article.innerHTML = marked.parse(text);
+
+        if (fileName.startsWith('week')) {
+            const works = Array.from(article.querySelectorAll('section h3')).map(ele => ele.innerHTML);
+            const details_per_work = Array.from(article.querySelectorAll('section ul')).map(ele => ele.innerHTML);
         
-        const works = Array.from(article.querySelectorAll('section h3')).map(ele => ele.innerHTML);
-        const details_per_work = Array.from(article.querySelectorAll('section ul')).map(ele => ele.innerHTML);
+            article.querySelector('section').innerHTML = '';
+            article.querySelector('section').appendChild(document.createElement('ul'));
         
-        article.querySelector('section').innerHTML = '';
-        article.querySelector('section').appendChild(document.createElement('ul'));
-        
-        let htmlText = '';
-        works.forEach((work, index) => {
+            let htmlText = '';
+            works.forEach((work, index) => {
 
-            htmlText += `
-            <li>
+                htmlText += `
+                <li>
 
-                <details name="${fileName}">
+                    <details name="${fileName}">
 
-                    <summary>
-                        <div>${work}</div>
-                    </summary>
-                    <ul>${details_per_work[index]}</ul>
+                        <summary>
+                            <div>${work}</div>
+                        </summary>
+                        <ul>${details_per_work[index]}</ul>
 
-                </details>
+                    </details>
 
-            </li>`;
-        })
+                </li>`;
+            })
 
-        article.querySelector('section ul').innerHTML = htmlText;
+            article.querySelector('section ul').innerHTML = htmlText;
+        }
 
-    }).finally(menu.close());
+    }).finally(nav_container.classList.remove('active'));
 }
 
 routie('/:fileName', fileName => {
 
     article.className = `${fileName}`;
-    parseMarkdown(`${fileName.replace('-', '')}_report`);
+
+    if (fileName.startsWith('week-')) {
+        
+        fileName = fileName.replace('-', '') + '_report';
+    }
+
+    parseMarkdown(fileName);
 })

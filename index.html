@@ -4,7 +4,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title> Intern reports </title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
    <link rel="icon" type="image/png" href="./asset/images/favicon-assassins-creed-32.png">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,6 +12,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    
    <link rel="stylesheet" href="style.css">
   
@@ -24,62 +25,65 @@
 
       <header>
 
-         <div id="icon-logo">
+         <div class="logo">
 
             <img src="./asset/images/icon-logo.svg" alt="icon-logo">
             <p>Hieu's Blog</p>
 
          </div>
-   
-         <img src="./asset/images/icon-menu.svg" alt="icon-menu" id="icon-menu">
-   
-         <dialog>
-   
-           <div>
-   
-             <img src="./asset/images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close">
-   
-             <menu>
-   
-               <li id="profile">
 
-                  <a href="#/profile" aria-content="page">Thông tin cá nhân</a>
+         <div class="navbar-only-small-medium-screen">
 
-               </li>
+            <img src="./asset/images/icon-menu.svg" alt="icon-menu" id="icon-menu">
 
-               <li id="intern-reports">
+            <div class="navbar-wrapper">
 
-                  <details>
+               <div class="navbar">
 
-                     <summary>Báo cáo thực tập</summary>
-                     <div>
+                  <div class="buttons">
 
-                        <a href="#/week-1" aria-content="page">Tuần 1</a>
-                        <a href="#/week-2" aria-content="page">Tuần 2</a>
-                        <a href="#/week-3" aria-content="page">Tuần 3</a>
-                        <a href="#/week-4" aria-content="page">Tuần 4</a>
-                        <a href="#/week-5" aria-content="page">Tuần 5</a>
-                        <a href="#/week-6" aria-content="page">Tuần 6</a>
-                        <a href="#/week-7" aria-content="page">Tuần 7</a>
-                        <a href="#/week-8" aria-content="page">Tuần 8</a>
+                     <img src="./asset/images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close">
+                     <input type="checkbox" name="" id="themeChange">
+                     
+                  </div>
+        
+                  <menu>
+        
+                    <li id="profile">
+      
+                       <a href="#/profile" aria-content="page">Thông tin cá nhân</a>
+      
+                    </li>
+      
+                    <li id="intern-reports">
+      
+                       <details>
+      
+                          <summary>Báo cáo thực tập</summary>
+                          <div>
+      
+                             <a href="#/week-1" aria-content="page">Tuần 1</a>
+                             <a href="#/week-2" aria-content="page">Tuần 2</a>
+                             <a href="#/week-3" aria-content="page">Tuần 3</a>
+                             <a href="#/week-4" aria-content="page">Tuần 4</a>
+                             <a href="#/week-5" aria-content="page">Tuần 5</a>
+                             <a href="#/week-6" aria-content="page">Tuần 6</a>
+                             <a href="#/week-7" aria-content="page">Tuần 7</a>
+                             <a href="#/week-8" aria-content="page">Tuần 8</a>
+      
+                          </div>
+      
+                       </details>
+      
+                    </li>
+        
+                  </menu>
+        
+                </div>
+      
+            </div>
 
-                     </div>
-
-                  </details>
-
-               </li>
-
-               <li>
-
-                  <input type="checkbox" name="" id="themeChange">
-
-               </li>
-   
-             </menu>
-   
-           </div>
-   
-         </dialog>
+         </div>
    
       </header>
 
