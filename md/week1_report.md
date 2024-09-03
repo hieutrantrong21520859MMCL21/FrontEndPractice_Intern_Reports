@@ -48,17 +48,3 @@ _(từ ngày 08/07/2024 đến ngày 14/07/2024)_
         <li>Slide thuyết trình: <a href="">tại đây</a></li>
     </ul>
 </section>
-<footer>
-    <p>Liên hệ</p>
-    <nav>
-        <div>
-            <i class="fa-brands fa-facebook-f"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-    </nav>
-</footer>

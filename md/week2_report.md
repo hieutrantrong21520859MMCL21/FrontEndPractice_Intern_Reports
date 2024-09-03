@@ -47,5 +47,4 @@ _(từ ngày 15/07/2024 đến ngày 21/07/2024)_
         <li>Tìm hiểu <em>GitHub-Flavored Markdown</em> (<a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">tại đây</a>)</li>
         <li>Viết các báo cáo hằng tuần sử dụng Markdown và đăng lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_Reports/tree/main/md">tại đây</a>)</li>
     </ul>
-
 </section>

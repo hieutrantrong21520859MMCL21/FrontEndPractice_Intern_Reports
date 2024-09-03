@@ -2,7 +2,7 @@
     <img src="./asset/images/avatar.png" alt="avatar">
     <p>Trần Trọng Hiếu</p>
 </div>
-<ul>
+<ul class="personal-info">
     <li>
         <img src="./asset/images/icon-location.svg" alt="icon-location">
         <p id="address">Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh</p>
@@ -20,17 +20,3 @@
         <a href="https://github.com/hieutrantrong21520859MMCL21?tab=repositories">GitHub cá nhân</a>
     </li>
 </ul>
-<footer>
-    <p>Liên hệ</p>
-    <nav>
-        <div>
-            <i class="fa-brands fa-facebook-f"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-    </nav>
-</footer>
