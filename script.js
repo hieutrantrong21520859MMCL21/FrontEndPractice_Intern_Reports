@@ -1,6 +1,8 @@
-const article = document.querySelector('article');
+let dark_mode = localStorage.getItem('dark_mode');
 
 function parseMarkdown(fileName) {
+
+    const article = document.querySelector('article');
 
     fetch(`./md/${fileName}.md`).then(res => res.text()).then(text => {
 
@@ -55,6 +57,8 @@ function parseMarkdown(fileName) {
 
         // Listen for changes of devices' screen
         mql.onchange = e => {
+
+            dark_mode = localStorage.getItem('dark_mode')
         
             if (e.matches) {
             
@@ -98,7 +102,7 @@ function handleSmall_MediumScreen() {
             <div class="buttons">
 
                 <img src="./asset/images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close">
-                <input type="checkbox" id="changeTheme">
+                <input type="checkbox" id="themeSwitch">
                      
             </div>
         
@@ -137,28 +141,51 @@ function handleSmall_MediumScreen() {
         </div>
       
     </div>`;
-    
+
+    /* Events */
+
     const nav_container = header_div.querySelector('.navbar-wrapper');
-    const btnChangeTheme = header_div.querySelector('#changeTheme');
+    const btnThemeSwitch = header_div.querySelector('#themeSwitch');
     const btnOpenNav = header_div.querySelector('#icon-menu');
     const btnCloseNav = header_div.querySelector('#icon-menu-close');
 
-    // Events
-    btnChangeTheme.addEventListener('click', () => {
+    // Set theme
+    // let dark_mode = localStorage.getItem('dark_mode');
 
-        document.body.classList.toggle('dark-theme');
+    if (dark_mode === 'active') {
+
+        document.body.classList.add('dark-theme');
+    }
+
+    btnThemeSwitch.addEventListener('click', () => {
+
+        dark_mode = localStorage.getItem('dark_mode');
+
+        if (dark_mode !== 'active') {
+
+            document.body.classList.add('dark-theme');
+            localStorage.setItem('dark_mode', 'active');
+        }
+        else {
+
+            document.body.classList.remove('dark-theme');
+            localStorage.setItem('dark_mode', '');
+        }
     })
 
+    // Open navigation bar
     btnOpenNav.addEventListener('click', () => {
 
         nav_container.classList.add('active');
     })
-    
+
+    // Close navigation bar
     btnCloseNav.addEventListener('click', () => {
     
         nav_container.classList.remove('active');
     })
 
+    // Close navigation bar when touch outside the bar
     nav_container.addEventListener('click', event => {
     
         const navbar = nav_container.querySelector('.navbar');
@@ -169,6 +196,7 @@ function handleSmall_MediumScreen() {
         }
     })
 
+    // FAQ's event 
     const first_div_elements = document.querySelectorAll("main article section > ul li .small-medium-screen-only");
     first_div_elements.forEach((ele, index) => {
 
@@ -176,9 +204,9 @@ function handleSmall_MediumScreen() {
 
             ele.classList.toggle('active');
 
-            const others = Array.from(first_div_elements).slice();
-            others.splice(index, 1);
-            others.forEach(o => o.classList.remove('active'));
+            const the_others = Array.from(first_div_elements).slice();
+            the_others.splice(index, 1);
+            the_others.forEach(o => o.classList.remove('active'));
         })
     })
 }
@@ -220,7 +248,7 @@ function handleLargeScreen() {
 
     </ul>
     
-    <input type="checkbox" id="changeTheme">`;
+    <input type="checkbox" id="themeSwitch">`;
 
     // Modify article for only large devices' screen
     document.querySelectorAll('main article section > ul > li > div:first-child').forEach((ele, index) => {
@@ -249,16 +277,38 @@ function handleLargeScreen() {
     ul.innerHTML = htmlText;
     aside.appendChild(ul);
 
-    // Events
-    const btnChangeTheme = header_div.querySelector('#changeTheme');
+    /* Events */
 
-    btnChangeTheme.addEventListener('click', () => {
+    const btnThemeSwitch = header_div.querySelector('#themeSwitch');
 
-        document.body.classList.toggle('dark-theme');
+    // Set theme
+    // let dark_mode = localStorage.getItem('dark_mode');
+    
+    if (dark_mode === 'active') {
+
+        document.body.classList.add('dark-theme');
+    }
+
+    btnThemeSwitch.addEventListener('click', () => {
+
+        dark_mode = localStorage.getItem('dark_mode');
+
+        if (dark_mode !== 'active') {
+
+            document.body.classList.add('dark-theme');
+            localStorage.setItem('dark_mode', 'active');
+        }
+        else {
+
+            document.body.classList.remove('dark-theme');
+            localStorage.setItem('dark_mode', '');
+        }
     })
 }
 
 routie('/:fileName', fileName => {
+
+    const article = document.querySelector('article');
 
     article.className = `${fileName}`;
 
