@@ -43,7 +43,7 @@ body {
    --navbar_wrapper_color: rgba(0, 0, 0, 0.2);
    --navbar_color: var(--color_white);
    --toc_border_color: var(--color_black_matte);
-   --details_background_color: var(--color_white_off_white);
+   --details_background_color: var(--color_white);
 
    background-color: var(--background_color);
 
@@ -56,47 +56,6 @@ body {
 ul {
    list-style-type: none;
    padding: 0;
-}
-
-ul.tabs {
-   display: flex;
-   flex-direction: column;
-   row-gap: 2rem;
-}
-
-details > summary {
-   list-style-type: none;
-   
-   position: relative;
-
-   cursor: pointer;
-}
-
-details > summary::after {
-   content: url(./asset/images/icon-arrow.svg);
-   filter: invert(1);
-
-   position: absolute;
-   right: 0;
-
-   transition: all 0.5s;
-}
-
-details > div {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   row-gap: 1rem;
-
-   transition: all 0.5s;
-}
-
-details[open] > summary::after {
-   transform: rotate(90deg);
-}
-
-details[open] > div {
-   margin-top: 1.25rem;
 }
 
 a:is(:link, :focus-within, :visited) {
@@ -116,6 +75,9 @@ main {
  }
 
  header {
+   padding-bottom: .5rem;
+   border-bottom: 2px solid var(--text_color);
+
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -130,6 +92,8 @@ header .logo {
    font-family: var(--stylish_font);
    font-size: 1.125rem;
    color: #f9ad5a;
+
+   cursor: pointer;
 }
 
 header .logo img {
@@ -199,6 +163,45 @@ input#themeSwitch::after {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+}
+
+header > div:last-child ul.tabs {
+   display: flex;
+   flex-direction: column;
+   row-gap: 2rem;
+}
+
+header > div:last-child ul.tabs > li > div:first-child {
+   font-weight: 600;
+   font-size: 1.125rem;
+   
+   position: relative;
+
+   cursor: pointer;
+}
+
+header > div:last-child ul.tabs > li > div:first-child::after {
+   content: url(./asset/images/icon-arrow.svg);
+   filter: invert(1);
+
+   position: absolute;
+   right: 0;
+
+   transition: transform 0.2s;
+}
+
+header > div:last-child ul.tabs > li > div:last-child {
+   max-height: 0;
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 1rem;
+
+   transition-property: margin-top, max-height;
+   transition-duration: 0.2s;
+   transition-behavior: ease;
 }
 
 article.profile {
@@ -320,13 +323,15 @@ article[class*='week-'] > section > ul li .small-medium-screen-only + .details {
 }
 
 footer {
-   margin-top: 48px;
-   padding-bottom: 30px;
+   margin-top: 3rem;
+   padding-bottom: 2rem;
+   padding-top: 0.5rem;
+   border-top: 2px solid var(--text_color);
 
    display: flex;
    flex-direction: column;
    align-items: center;
-   row-gap: 20px;
+   row-gap: 1.25rem;
 }
 
 footer p {
@@ -337,7 +342,7 @@ footer p {
 footer nav {
    display: flex;
    justify-content: center;
-   column-gap: 10px;
+   column-gap: 1rem;
 }
 
 footer nav div {
@@ -380,10 +385,17 @@ input#themeSwitch:hover {
                inset 0 -4px 4px rgba(0, 0, 0, 0.05);
 }
 
-li#profile a:hover,
-li#intern-reports details > summary:is(:hover, :focus),
-li#intern-reports details > div a:hover {
-   color: hsl(35, 77%, 62%);
+header > div:last-child ul.tabs > li.active > div:last-child a:hover {
+   font-weight: 600;
+}
+
+header > div:last-child ul.tabs > li.active > div:first-child::after {
+   transform: rotate(90deg);
+}
+
+header > div:last-child ul.tabs > li.active > div:last-child {
+   max-height: 500px;
+   margin-top: 1.125rem;
 }
 
 footer nav div:is(:hover, :focus) {
@@ -417,7 +429,7 @@ body.dark-theme {
    background-color: var(--background_color);
 }
 
-body.dark-theme details summary::after {
+body.dark-theme header > div:last-child ul.tabs li > div:first-child::after {
    filter: invert(0);
 }
 
@@ -437,11 +449,7 @@ body.dark-theme input#themeSwitch::after {
    content: url(./asset/images/icon-moon.svg);
 }
 
-body.dark-theme main article > section > ul details > summary::after {
-   filter: invert(1);
-}
-
-body.dark-theme main article > section > ul details[open] > summary::after {
+body.dark-theme main article > section > ul > li > .small-medium-screen-only::after {
    filter: invert(1);
 }
 
@@ -462,39 +470,49 @@ body.dark-theme main article > section > ul details[open] > summary::after {
       margin-bottom: 1.25rem;
    }
 
-   header .navbar-only-large-screen {
+   header > div:last-child {
       width: 50%;
 
       display: flex;
       justify-content: space-between;
    }
 
-   header .navbar-only-large-screen ul.tabs {
+   header > div:last-child ul.tabs {
       width: 80%;
 
       flex-direction: row;
+      justify-content: flex-end;
       align-items: center;
       column-gap: 1.5rem;
    }
 
-   header .navbar-only-large-screen ul.tabs > li:last-child details {
+   header > div:last-child ul.tabs > li {
       position: relative;
    }
 
-   header .navbar-only-large-screen ul.tabs > li:last-child details > summary {
-      width: 180px;
+   header > div:last-child ul.tabs > li > div:first-child::after {
+      content: '';
    }
 
-   header .navbar-only-large-screen ul.tabs > li:last-child details > div {
-      width: 180px;
+   header > div:last-child ul.tabs > li > div:last-child {
+      width: 100%;
+      background-color: var(--navbar_color);
 
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
    }
 
-   header .navbar-only-large-screen ul.tabs > li:last-child details[open] > div {
-      background-color: var(--details_background_color);
+   header > div:last-child ul.tabs > li.active > div:last-child {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      z-index: 1;
+   }
+
+   article {
+      text-align: justify;
+
+      flex: 3;
    }
 
    article[class*='week-'] h1 {
@@ -507,6 +525,12 @@ body.dark-theme main article > section > ul details[open] > summary::after {
 
    article[class*='week-'] p {
       font-size: 1.125rem;
+   }
+
+   article[class*='week-'] a {
+      font-weight: 400;
+      color: blue;
+      text-decoration: underline;
    }
 
    article[class*='week-'] > section > ul {
@@ -529,22 +553,23 @@ body.dark-theme main article > section > ul details[open] > summary::after {
    }
 
    aside.ToC-only-large-screen ul {
-      width: 50%;
+      text-align: justify;
+      opacity: 0.5;
 
       display: flex;
       flex-direction: column;
       row-gap: 1.25rem;
-   }
 
-   article {
-      text-align: justify;
-
-      flex: 3;
+      cursor: pointer;
    }
 
    footer {
       width: 100%;
       order: 3;
+   }
+
+   aside.ToC-only-large-screen ul div:hover {
+      font-weight: 500;
    }
 }
 
