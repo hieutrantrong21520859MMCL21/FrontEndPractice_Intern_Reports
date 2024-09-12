@@ -39,11 +39,11 @@
 
 body {
    --text_color: var(--color_black);
-   --background_color: var(--color_white_seashell);
+   --background_color: var(--color_white_off_white);
    --navbar_wrapper_color: rgba(0, 0, 0, 0.2);
    --navbar_color: var(--color_white);
-   --toc_border_color: var(--color_black_matte);
-   --details_background_color: var(--color_white);
+   --toc_border_color: var(--color_black_charcoal);
+   --header_background_color: var(--color_white_off_white);
 
    background-color: var(--background_color);
 
@@ -77,6 +77,7 @@ main {
  header {
    padding-bottom: .5rem;
    border-bottom: 2px solid var(--text_color);
+   background-color: var(--header_background_color);
 
    display: flex;
    justify-content: space-between;
@@ -201,7 +202,7 @@ header > div:last-child ul.tabs > li > div:last-child {
 
    transition-property: margin-top, max-height;
    transition-duration: 0.2s;
-   transition-behavior: ease;
+   transition-timing-function: ease;
 }
 
 article.profile {
@@ -257,6 +258,12 @@ article[class*='week-'] {
    display: flex;
    flex-direction: column;
    row-gap: 1rem;
+}
+
+article[class*='week-'] a {
+   font-weight: 400;
+   color: blue;
+   text-decoration: underline;
 }
 
 article[class*='week-'] h1 {
@@ -322,8 +329,53 @@ article[class*='week-'] > section > ul li .small-medium-screen-only + .details {
    transition: all 0.5s ease-out;
 }
 
+button#backward {
+   width: 47%;
+
+   font-family: inherit;
+   font-size: inherit;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   row-gap: .5rem;
+}
+
+button#backward div {
+   display: flex;
+   align-items: center;
+}
+
+button#forward {
+   width: 47%;
+
+   font-family: inherit;
+   font-size: inherit;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   row-gap: .5rem;
+}
+
+button#forward div {
+   display: flex;
+   align-items: center;
+}
+
+article.not-found {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+}
+
+aside.ToC.only-small-medium-screen,
+article.not-found + aside.ToC {
+   display: none;
+}
+
 footer {
-   margin-top: 3rem;
+   margin-top: 2rem;
    padding-bottom: 2rem;
    padding-top: 0.5rem;
    border-top: 2px solid var(--text_color);
@@ -368,6 +420,13 @@ footer nav div i{
 }
 
 /* Events */
+header.scrolled-up {
+   border: none;
+
+   position: sticky;
+   top: 0;
+}
+
 header .navbar-only-small-medium-screen .navbar-wrapper.active {
    visibility: visible;
    z-index: 1;
@@ -425,6 +484,7 @@ body.dark-theme {
    --navbar_wrapper_color: rgba(0,0,0,0.5);
    --navbar_color: var(--color_black_matte);
    --toc_border_color: var(--color_white_ivory);
+   --header_background_color: var(--color_black_licorice);
 
    background-color: var(--background_color);
 }
@@ -468,6 +528,8 @@ body.dark-theme main article > section > ul > li > .small-medium-screen-only::af
       width: 100%;
       height: fit-content;
       margin-bottom: 1.25rem;
+
+      z-index: 10;
    }
 
    header > div:last-child {
@@ -527,12 +589,6 @@ body.dark-theme main article > section > ul > li > .small-medium-screen-only::af
       font-size: 1.125rem;
    }
 
-   article[class*='week-'] a {
-      font-weight: 400;
-      color: blue;
-      text-decoration: underline;
-   }
-
    article[class*='week-'] > section > ul {
       font-size: 1.125rem;
    }
@@ -544,7 +600,11 @@ body.dark-theme main article > section > ul > li > .small-medium-screen-only::af
       font-size: 1.5rem;
    }
 
-   article[class*='week-'] + aside.ToC-only-large-screen {
+   article.profile + aside.ToC.only-large-screen {
+      display: none;
+   }
+
+   article[class*='week-'] + aside.ToC.only-large-screen {
       height: fit-content;
       padding-left: 1.5rem;
       border-left: 2px solid var(--toc_border_color);
@@ -552,7 +612,14 @@ body.dark-theme main article > section > ul > li > .small-medium-screen-only::af
       flex: 1;
    }
 
-   aside.ToC-only-large-screen ul {
+   aside.ToC.only-large-screen {
+      display: block;
+
+      position: sticky;
+      top: 4rem;
+   }
+
+   aside.ToC.only-large-screen ul {
       text-align: justify;
       opacity: 0.5;
 

@@ -15,11 +15,11 @@ _(từ ngày 12/08/2024 đến ngày 18/08/2024)_
 <section>
     <h3>Sửa lại bài tập <em><strong>Intro component with sign up form</strong></em> theo yêu cầu của <strong>CBHD</strong></h3>
     <ul>
-        <li>Thiết kế form sử dụng <em>built - in form validation</em> (<a href="">source code</a>)</li>
-        <li>Thiết kế form sử dụng <em>validation API trong JavaScript</em> (<a href="">source code</a>)</li>
+        <li>Thiết kế form sử dụng <em>built - in form validation</em> (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_IntroComponentWithSignUpForm/tree/built-in-form-validation">source code</a>)</li>
+        <li>Thiết kế form sử dụng <em>validation API trong JavaScript</em> (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_IntroComponentWithSignUpForm/tree/validation-api-javascript">source code</a>)</li>
     </ul>
     <h3>Sửa lại bài tập <em><strong>Contact form</strong></em> theo yêu cầu của <strong>CBHD</strong></h3>
     <ul>
-        <li>Dùng thẻ <em><strong>dialog</strong></em> thiết kế pop - up (<a href="">source code</a>)</li>
+        <li>Dùng thẻ <em><strong>dialog</strong></em> thiết kế pop - up (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_ContactForm">source code</a>)</li>
     </ul>
 </section>

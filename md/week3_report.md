@@ -17,14 +17,14 @@ _(từ ngày 22/07/2024 đến ngày 28/07/2024)_
     <ul>
         <li>Sử dụng <em>float layout</em> để thiết kế giao diện</li>
         <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_ProductPreviewCardComponent/tree/using-float-layout">source code</a>)</li>
-        <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+        <li>Triển khai website sử dụng <em>GitHub Pages</em>
     </ul>
     <h3>Làm bài tập <em><strong>FAQ Accordion</strong></em> trên <em>Frontend Mentor</em></h3>
       <ul>
         <li>Hiển thị các câu hỏi và câu trả lời sử dụng JavaScript</li>
         <li>Tạo hiệu ứng click chỉ sử dụng CSS và HTML</li>
         <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_FAQ_Accordion/tree/use-semantic-html-and-details-tag)">source code</a>)</li>
-        <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+        <li>Triển khai website sử dụng <em>GitHub Pages</em>
     </ul>
     <h3>Tìm hiểu ngôn ngữ JavaScript qua tài liệu <strong>CBHD</strong> đã cung cấp (<em>javascript.info</em>)</h3>
     <ul>

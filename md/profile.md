@@ -17,6 +17,6 @@
     </li>
     <li>
         <img src="./asset/images/icon-github.svg" alt="icon-github">
-        <a href="https://github.com/hieutrantrong21520859MMCL21?tab=repositories">GitHub cá nhân</a>
+        <a href="https://github.com/hieutrantrong21520859MMCL21?tab=repositories">hieutrantrong21520859MMCL21</a>
     </li>
 </ul>

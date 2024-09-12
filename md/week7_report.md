@@ -17,6 +17,7 @@ _(từ ngày 19/08/2024 đến ngày 25/08/2024)_
     <ul>
         <li>Hoàn thành các yêu cầu của đề bài</li>
         <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
+        <li>Triển khai website sử dụng <em>GitHub Pages</em>
     </ul>
     <h3>Sửa lại bài tập <em><strong>Product list with cart</strong></em> theo yêu cầu của <strong>CBHD</strong></h3>
     <ul>

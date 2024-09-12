@@ -30,7 +30,7 @@
          justify-content: center;
          align-items: center;
          background-color: rgba(0, 0, 0, 0.6);
-         z-index: 2;
+         z-index: 20;
       }
 
       .loader-core {
@@ -59,13 +59,13 @@
 
 <body>
 
+   <div class="loader">
+
+      <div class="loader-core"></div>
+
+   </div>
+
    <main>
-
-      <div class="loader">
-
-         <div class="loader-core"></div>
-
-      </div>
 
       <header>
 
@@ -80,9 +80,13 @@
    
       </header>
 
-      <article></article>
+      <article>
+         <!-- hiển thị nội dung sử dụng JavaScript -->
+      </article>
 
-      <aside></aside>
+      <aside class="ToC">
+         <!-- hiển thị nội dung sử dụng JavaScript -->
+      </aside>
 
       <footer>
          <p>Liên hệ</p>

@@ -16,32 +16,32 @@ _(từ ngày 05/08/2024 đến ngày 11/08/2024)_
   <h3>Làm bài tập <em><strong>Intro component with sign up form</strong></em> trên <em>Frontend Mentor</em></h3>
   <ul>
     <li>Hoàn thành các yêu cầu của đề bài</li>
-    <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
-    <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+    <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_IntroComponentWithSignUpForm">source code</a>)</li>
+    <li>Triển khai website sử dụng <em>GitHub Pages</em>
   </ul>
   <h3>Làm bài tập <em><strong>Ping single column coming soon page</strong></em> trên <em>Frontend Mentor</em></h3>
   <ul>
     <li>Hoàn thành các yêu cầu của đề bài</li>
-    <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
-    <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+    <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_PingComingSoonPage">source code</a>)</li>
+    <li>Triển khai website sử dụng <em>GitHub Pages</em>
   </ul>
   <h3>Làm bài tập <em><strong>Contact form</strong></em> trên <em>Frontend Mentor</em></h3>
   <ul>
     <li>Hoàn thành các yêu cầu của đề bài</li>
-    <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
-    <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+    <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_ContactForm">source code</a>)</li>
+    <li>Triển khai website sử dụng <em>GitHub Pages</em>
   </ul>
   <h3>Làm bài tập <em><strong>Mortgage repayment calculator</strong></em> trên <em>Frontend Mentor</em></h3>
   <ul>
     <li>Hoàn thành các yêu cầu của đề bài</li>
-    <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
-    <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+    <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_MortgageRepaymentCalculator">source code</a>)</li>
+    <li>Triển khai website sử dụng <em>GitHub Pages</em>
   </ul>
   <h3>Làm bài tập <em><strong>Product list with cart</strong></em> trên <em>Frontend Mentor</em></h3>
   <ul>
     <li>Hoàn thành các yêu cầu của đề bài</li>
-    <li>Nộp code lên GitHub (<a href="">source code</a>)</li>
-    <li>Triển khai website sử dụng <em>GitHub Pages</em> (<a href="">tại đây</a>)
+    <li>Nộp code lên GitHub (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_ProductListWithCart">source code</a>)</li>
+    <li>Triển khai website sử dụng <em>GitHub Pages</em>
   </ul>
   <h3>Đọc nội dung <em>Web form building blocks</em> trên <em>MDN</em></h3>
   <ul>

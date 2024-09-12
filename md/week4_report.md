@@ -15,13 +15,13 @@ _(từ ngày 29/07/2024 đến ngày 04/08/2024)_
 <section>
   <h3>Tìm hiểu các thuộc tính <em><strong>box-sizing</strong></em> và <em><strong>order</strong></em> trong CSS</h3>
     <ul>
-      <li>Đối với thuộc tính <em><strong>box-sizing</strong></em>, phân biệt sự khác nhau khi sử dụng giá trị <em>content-box</em> và <em>border-box</em> (<a href="">tài liệu</a>)</li>
-      <li>Đối với thuộc tính <em><strong>order</strong></em> nắm được ngữ cảnh sử dụng cũng như ưu, nhược điểm của nó (<a href="">tài liệu</a>)</li>
+      <li>Đối với thuộc tính <em><strong>box-sizing</strong></em>, phân biệt sự khác nhau khi sử dụng giá trị <em>content-box</em> và <em>border-box</em> (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">tài liệu</a>)</li>
+      <li>Đối với thuộc tính <em><strong>order</strong></em> nắm được ngữ cảnh sử dụng cũng như ưu, nhược điểm của nó (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order">tài liệu</a>)</li>
     </ul>
     <h3>Tìm hiểu thẻ <em><strong>menu</strong></em> và thẻ <em><strong>dialog</strong></em> trong HTML</h3>
     <ul>
-      <li>Tìm hiểu các thuộc tính đi kèm và ngữ cảnh sử dụng với thẻ <em><strong>menu</strong></em> (<a href="">tham khảo</a>)</li>
-      <li>Tìm hiểu các thuộc tính đi kèm và ngữ cảnh sử dụng với thẻ <em><strong>dialog</strong></em> (<a href="">tham khảo</a>)</li>
+      <li>Tìm hiểu các thuộc tính đi kèm và ngữ cảnh sử dụng với thẻ <em><strong>menu</strong></em> (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">tham khảo</a>)</li>
+      <li>Tìm hiểu các thuộc tính đi kèm và ngữ cảnh sử dụng với thẻ <em><strong>dialog</strong></em> (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">tham khảo</a>)</li>
     </ul>
     <h3>Tìm hiểu về khái niệm <em>CSS Reset</em></h3>
     <ul>
@@ -31,9 +31,9 @@ _(từ ngày 29/07/2024 đến ngày 04/08/2024)_
     </ul>
     <h3>Sửa lại bài tập <em><strong>FAQ Accordion</strong></em> theo yêu cầu của <strong>CBHD</strong></h3>
     <ul>
-      <li>Thêm hiệu ứng khi ẩn/hiện câu trả lời (<a href="">source code</a>)</li>
-      <li>Thêm sự kiện sao cho khi người dùng click vào một câu hỏi thì câu trả lời đang mở tự ẩn đi (<a href="">source code</a>)</li>
-      <li>Chỉ sử dụng JavaScript để viết code HTML cho bài làm (<a href="">source code</a>)</li>
+      <li>Thêm hiệu ứng khi ẩn/hiện câu trả lời (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_FAQ_Accordion/tree/use-semantic-html-and-details-tag">source code</a>)</li>
+      <li>Thêm sự kiện sao cho khi người dùng click vào một câu hỏi thì câu trả lời đang mở tự ẩn đi (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_FAQ_Accordion/tree/animation-closing">source code</a>)</li>
+      <li>Chỉ sử dụng JavaScript để viết code HTML cho bài làm (<a href="https://github.com/hieutrantrong21520859MMCL21/FrontEndPractice_Intern_FAQ_Accordion/tree/generate-html-using-javascript">source code</a>)</li>
     </ul>
     <h3>Sửa lại bài tập <em><strong>Interactive rating component</strong></em> theo yêu cầu của <strong>CBHD</strong></h3>
     <ul>
